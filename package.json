@@ -4,8 +4,8 @@
   "description": "This is a webiste for the fictional campsites review site Nucamp",
   "main": "index.html",
   "scripts": {
-    "lite": "lite-server", 
-    "start": "npm run lite", 
+    "lite": "lite-server",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,5 +17,13 @@
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrian275/nucampsite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adrian275/nucampsite/issues"
+  },
+  "homepage": "https://github.com/adrian275/nucampsite#readme"
 }
