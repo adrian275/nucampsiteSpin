@@ -1,46 +1,98 @@
 body {
     font-family: "Open Sans", sans-serif;
+
 }
 
 h1, h2, h3 {
-    font-family: "Lobster", cursive;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #414042;
+    
 }
 
 h2 {
-    color: #3046C5;
+    color: #414042;
+
 }
 
 header h2 {
-    color: #CEC8FF;
+    color: #414042;
 }
 
 .site-footer {
-    background-image: linear-gradient(#b7a8f8, white);
+    /* background-image: linear-gradient(#b7a8f8, white); */
     padding: 20px 0;
+    color: #414042;
+    background-color: white;
+    opacity: 95%;
+}
+
+.site-footer li {
+  
 }
 
 .jumbotron {
     margin: 0;
-    padding: 30px;  
-    background-image: linear-gradient(to right, #5637DD, #3046c5, #60106B);
-    color: white;
-}
+    padding: 40px 40px;  
+    /* border-bottom: solid 3px rgb(231, 231, 231); */
+    /*background-image: linear-gradient(to right, #5637DD);, #3046c5, #60106B*/
+    opacity: 85%;
+    background-image: url(https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat ; /* Do not repeat the image */
+    background-size: cover;
+
+
+    }
 
 .row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
+    padding: 50px 20px;
+    /* border-bottom: 1px ridge; */
     min-height: 200px;
-
 }
+
+.info {
+    background-color: white;
+    opacity: 90%;
+    border-radius: 8px;
+    margin: 30px 0px;
+    
+}
+
+
 
 .navbar {
-    background-color: #901CAD;
+   /* background-color: white;#901CAD;*/
 }
 
+
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    opacity: 80%;
 }
 
 .carousel {
-    border: solid #5637DD;
+    
+    /* border: solid #5637DD; */
+}
+
+.icon-link {
+    margin-left: 
+}
+
+img {
+    border-radius: 5px;
+    opacity: 95%;
+}
+
+.bck-img {
+    background-image: url(https://images.pexels.com/photos/1252399/pexels-photo-1252399.jpeg?cs=srgb&dl=person-riding-boat-in-body-of-water-between-islands-1252399.jpg&fm=jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat ; /* Do not repeat the image */
+    background-size: cover;
+    opacity: 95%;
+}
+
+p {
+    color: #414042;
 }

@@ -20,43 +20,55 @@
         <title>NuCamp: A Better Way To Camp</title>
     </head>
 <body>
-    <header class="jumbotron jumbotron-fluid">
+    <header class="jumbotron jumbotron-fluid bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <img src="img/logo.png" class="img-fluid" alt="">
                 </div>
-                <div class="col">
-                    <h1>NuCamp</h1>
-                    <h2>a better Way to camp</h2>
-                </div>
-                <div class="col-md-4 col-xl-2 mt-4">      
-                        <a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
-            <div class="collapse navbar-collapse" id="nucampNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i>Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i>About</a></ li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i>Sites</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
-                </ul>
-                <span class="navbar-text ml-auto">
+                <span class="navbar-text ml-auto mr-3 mb-2">
                     <a data-toggle="modal" data-target="#loginModal">
-                        <i class="fa fa-sign-in"></i>Login
+                        <i class="fa fa-sign-in text-white"></i><span class="text-white">Login</span> 
                     </a>
                 </span>
+                
             </div>
+            <div class="row">
+                <div class="col pull-right mb-2">      
+                    <a role="button" data-toggle="modal" data-target="#reserveModal" class="btn btn-lg btn-primary btn-light pull-right">Reserve Campsite</a>
+                </div> 
+            </div>
+            <div class="row mb-4 pull-right">
+                <nav class="navbar navbar-expand-md navbar-light sticky-top">
+                    <div class="container">
+                        <!-- <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a> -->
+                        <div class="collapse navbar-collapse bg-light rounded" id="nucampNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg ml-1 mr-1"></i><span class="icon-link">Home</span></a></li>
+                                <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg ml-1 mr-1"></i><span class="icon-link">About</span></a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg ml-1 mr-1"></i><span class="icon-link">Sites</span></a></li>
+                                <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg ml-1 mr-1"></i><span class="icon-link">Contact</span></a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-white">NuCamp</h1>
+                    <h2 class="text-white">a better Way to camp</h2>
+                </div> 
+            </div>
+            
+      
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </nav>
+    </header>
+
+      
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -94,9 +106,10 @@
             </div>
         </div>
     </div>
+    <div class="bck-img">
     <div class="container">
      <div class="row row-content">
-         <div class="col-md-8 mx-auto">
+         <div class="col-md-10 mx-auto">
             <div id="homeCarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
@@ -105,7 +118,7 @@
                 </ol>
                <div class="carousel-inner">
                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="img/breadcrumb-trail.jpg" alt="Breadcrumb Trail Campground">
+                        <img class="d-block w-100 rounded" src="img/breadcrumb-trail.jpg" alt="Breadcrumb Trail Campground">
                         <div class="carousel-caption">
                             <h3>Breadcrumb Trail Campground</h3>
                             <p class="d-none d-sm-block">Let Nucamp be your guide to this off-the-beaten-path, hike-in-only campground.</p>
@@ -137,7 +150,11 @@
             </div>
          </div>
      </div>
-        <div class="row row-content align-items-center">
+     </div>
+    
+     <div class="container">
+        <div class="row row-content align-items-center info">
+
                 <div class="col-sm-4 order-sm-last col-md-3">
                     <h2 class="text-sm-right">Discover & Review</h2>
                 </div>
@@ -150,10 +167,11 @@
                         </div>
                     </div>
                 </div>
-        </div>
+      
+    </div>
     </div>
  <div class="container">
-    <div class="row row-content align-items-center">
+    <div class="row row-content align-items-center info">
              <div class="col-sm-4 col-md-3">
                 <h2 class="text-sm-left">Featured Campsites</h2>
              </div>
@@ -169,7 +187,7 @@
     </div>
 </div>
 <div class="container">
-    <div class="row row-content align-items-center">
+    <div class="row row-content align-items-center info">
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Discover & Review</h2>
             </div>
@@ -186,7 +204,7 @@
     <div class="row row-content align-items-center">
         <div class="col col-sm-8 col-lg-6 mx-auto">
             <div class="card">
-                <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                <h3 class="card-header bg-dark text-white">Reserve a Campsite</h3>
                     <div class="card-body">
                         <form id="reserveForm">
                             <div class="row form-group align-items-center">
@@ -216,7 +234,7 @@
                             </div>
                             <div class="row form-group align-items-center">
                                 <div class="col">
-                                    <button type="submit" class="btn bg-primary text-white">Reserve</button>
+                                    <button type="submit" class="btn bg-info text-white">Reserve</button>
                                 </div>
                             </div>
                         </form>
@@ -224,6 +242,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 
     <footer class="site-footer">
@@ -266,3 +285,7 @@
 
 </body>
 </html>
+
+<!-- <div class="col-4 col-sm-3 col-md-2 align-self-center">
+    <img src="img/logo.png" class="img-fluid" alt="">
+</div> -->
